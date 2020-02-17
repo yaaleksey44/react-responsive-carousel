@@ -1,4 +1,49 @@
 .container{
+    display: flex;
+}
+
+.contentContainer{
     text-align: right;
     background-color: blue;
+    display: flex;
+    overflow: hidden;
+    flex: 1;
+}
+
+.itemContainer{
+    border: solid 1px rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.itemStrip{
+    position: relative;
+    display: flex;
+    transition: left 1s ease-in-out;
+}
+
+.disabledAnimation *{
+    transition: none!important;
+}
+
+.sliderButtonContainer{
+    display: flex;
+    align-items: center;
+}
+
+.sliderButton{
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: opacity 0.25s ease-in-out;
+}
+
+.disabled{
+    opacity: 0.4;
+    cursor: default;
 }
